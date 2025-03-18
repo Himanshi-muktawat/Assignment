@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dublin Guide - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Dublin!</h1>
+    </header>
+    <main>
+        <section id="user-info">
+            <h2>User Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age"><br><br>
+            <button onclick="checkFare()">Check Fare</button><br><br>
+            <textarea id="fareOutput" rows="2" cols="30"></textarea>
+        </section>
+
+        <section id="cuisine-info">
+            <h2>Cuisine Preferences</h2>
+            <label for="userName">Name:</label>
+            <input type="text" id="userName"><br><br>
+            <label for="cuisine">Cuisine:</label>
+            <input type="text" id="cuisine"><br><br>
+            <button onclick="getCuisine()">Submit Cuisine</button><br><br>
+            <textarea id="cuisineOutput" rows="4" cols="30"></textarea>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="destinations.html">Top Attractions</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="bars.html">Bars</a></li>
+                <li><a href="history.html">History & Culture</a></li>
+            </ul>
+        </nav>
+
+        <section id="dublin-video">
+            <h2>A Quick Look at Dublin</h2>
+            <video width="640" height="360" controls>
+                <source src="dublin-tour.mov" type="video/mp4">
+            </video>
+        </section>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
